@@ -40,7 +40,7 @@ public class Main {
                 System.out.println("Octal: "+ octal);
                 System.out.println("Hexadecimal: " + hexa);
             }
-            if (main == 2) {
+            else if (main == 2) {
                 //Conversão Decimal
                 System.out.print("Digite o número Decimal: ");
                 digito = sc.next();
@@ -50,12 +50,12 @@ public class Main {
                 octal = Integer.toOctalString(decimal);
                 hexa = Integer.toHexString(decimal);
 
-                System.out.println("Binario: "+binario);
                 System.out.println("Decimal: "+decimal);
+                System.out.println("Binario: "+binario);
                 System.out.println("Octal: "+ octal);
                 System.out.println("Hexadecimal: " + hexa);
             }
-            if (main == 3) {
+            else if (main == 3) {
                 //Conversão Octal
                 System.out.print("Digite o número Octal: ");
                 digito = sc.next();
@@ -65,12 +65,12 @@ public class Main {
                 binario = Integer.toBinaryString(decimal);
                 hexa = Integer.toHexString(decimal);
 
+                System.out.println("Octal: "+ octal);
                 System.out.println("Binario: "+binario);
                 System.out.println("Decimal: "+decimal);
-                System.out.println("Octal: "+ octal);
                 System.out.println("Hexadecimal: " + hexa);
             }
-            if (main == 4) {
+            else if (main == 4) {
                 //Conversão Hexadecimal
                 System.out.print("Digite o número  Hexadecimal: ");
                 digito = sc.next();
@@ -80,10 +80,13 @@ public class Main {
                 binario = Integer.toBinaryString(decimal);
                 octal = Integer.toOctalString(decimal);
 
+                System.out.println("Hexadecimal: " + hexa);
                 System.out.println("Binario: "+binario);
                 System.out.println("Decimal: "+decimal);
                 System.out.println("Octal: "+ octal);
-                System.out.println("Hexadecimal: " + hexa);
+            }
+            else {
+                System.out.println("Opção inválida, por favor escolha novamente!");
             }
         }while (main != 0);
     }
